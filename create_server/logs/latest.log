@@ -1,0 +1,144 @@
+[04May2021 09:53:37.497] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmlserver, --fml.forgeVersion, 34.1.0, --fml.mcpVersion, 20200911.084530, --fml.mcVersion, 1.16.3, --fml.forgeGroup, net.minecraftforge]
+[04May2021 09:53:37.518] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 7.0.1+78+master.e9771d8 starting: java version 11.0.11 by Ubuntu
+[04May2021 09:53:38.256] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[04May2021 09:53:38.445] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.1 Source=file:/home/ethan/create_server/create_server/libraries/org/spongepowered/mixin/0.8.1/mixin-0.8.1.jar Service=ModLauncher Env=SERVER
+[04May2021 09:53:39.640] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[04May2021 09:53:41.559] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlserver' with arguments [--gameDir, .]
+[04May2021 09:53:57.023] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 34.1.0, for MC 1.16.3 with MCP 20200911.084530
+[04May2021 09:53:57.109] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v34.1.0 Initialized
+[04May2021 09:53:57.222] [modloading-worker-1/INFO] [JarSignVerifier/]: Mod usefulbackpacks is signed with a valid certificate.
+[04May2021 09:53:57.907] [modloading-worker-1/INFO] [com.simibubi.create.repack.registrate.AbstractRegistrate/]: Detected new forge version, registering events reflectively.
+[04May2021 09:53:58.069] [modloading-worker-0/INFO] [JarSignVerifier/]: Mod uteamcore is signed with a valid certificate.
+[04May2021 09:54:07.354] [main/ERROR] [net.minecraft.util.Util/]: No data fixer registered for super_glue
+[04May2021 09:54:07.359] [main/ERROR] [net.minecraft.util.Util/]: No data fixer registered for contraption
+[04May2021 09:54:07.361] [main/ERROR] [net.minecraft.util.Util/]: No data fixer registered for stationary_contraption
+[04May2021 09:54:07.363] [main/ERROR] [net.minecraft.util.Util/]: No data fixer registered for seat
+[04May2021 09:54:08.240] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [usefulbackpacks] Starting version check at https://api.u-team.info/update/usefulbackpacks.json
+[04May2021 09:54:09.083] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [usefulbackpacks] Found status: OUTDATED Current: 1.11.5.82 Target: 1.11.6.84
+[04May2021 09:54:09.099] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[04May2021 09:54:09.439] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 34.1.0 Target: null
+[04May2021 09:54:09.439] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [uteamcore] Starting version check at https://api.u-team.info/update/uteamcore.json
+[04May2021 09:54:09.470] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [uteamcore] Found status: OUTDATED Current: 3.1.9.181 Target: 3.1.12.185
+[04May2021 09:54:18.042] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[04May2021 09:54:20.199] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[04May2021 09:54:20.203] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04May2021 09:54:20.205] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04May2021 09:54:20.208] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[04May2021 09:54:20.210] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[04May2021 09:54:20.259] [main/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.16.3-34.1.0-universal.jar, create-mc1.16.3_v0.3e.jar, Useful-Backpacks-Mod-1.16.3.jar, U-Team-Core-1.16.3.jar
+[04May2021 09:54:26.406] [Worker-Main-2/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 18 recipes
+[04May2021 09:54:28.869] [Worker-Main-2/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1650 advancements
+[04May2021 09:54:40.136] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.16.3
+[04May2021 09:54:40.136] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[04May2021 09:54:40.137] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[04May2021 09:54:40.137] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Generating keypair
+[04May2021 09:54:40.640] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[04May2021 09:54:40.725] [Server thread/INFO] [net.minecraft.network.NetworkSystem/]: Using epoll channel type
+[04May2021 09:54:41.341] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[04May2021 09:54:41.884] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[04May2021 09:54:45.501] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04May2021 09:54:45.504] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04May2021 09:54:45.507] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04May2021 09:54:45.510] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04May2021 09:54:45.513] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04May2021 09:54:45.515] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04May2021 09:54:45.518] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04May2021 09:54:45.521] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04May2021 09:54:45.890] [Worker-Main-2/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[04May2021 09:54:46.457] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 9%
+[04May2021 09:54:46.886] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 97%
+[04May2021 09:54:47.234] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 5348 ms
+[04May2021 09:54:47.237] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (6.052s)! For help, type "help"
+[04May2021 09:55:24.637] [User Authenticator #1/INFO] [net.minecraft.network.login.ServerLoginNetHandler/]: UUID of player ovwe is 83cb5f9f-9819-44f8-9074-f2a343e97e2e
+[04May2021 09:55:26.900] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@3e2408a1
+[04May2021 09:55:27.048] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: ovwe[/108.51.109.224:49173] logged in with entity id 51 at (-24270.38611115341, 66.875, -6758.5682028849715)
+[04May2021 09:55:27.144] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ovwe joined the game
+[04May2021 09:55:27.462] [Netty Epoll Server IO #2/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.ModIdArgument@34c6ff6 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[04May2021 09:55:27.467] [Netty Epoll Server IO #2/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.EnumArgument@b88bf8d (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[04May2021 09:55:29.077] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2337ms or 46 ticks behind
+[04May2021 09:55:33.196] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] hellovwe
+[04May2021 09:55:39.719] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> LMFAO I HAVE NOTHING
+[04May2021 09:55:44.448] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] f
+[04May2021 09:55:55.534] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] don't like get back more than you had or whatever
+[04May2021 09:56:04.262] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] not that i play enough to care anymore
+[04May2021 09:56:08.351] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Set ovwe's game mode to Creative Mode
+[04May2021 09:56:14.667] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 30627ms or 612 ticks behind
+[04May2021 09:56:17.912] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> IK
+[04May2021 09:56:20.362] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> caps
+[04May2021 09:56:34.278] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4638ms or 92 ticks behind
+[04May2021 09:57:38.059] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] gtg bc school, server may or may not go off for a few mins idk
+[04May2021 09:57:39.441] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] sry
+[04May2021 09:57:44.135] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> bruh
+[04May2021 09:57:54.726] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> open it back after then
+[04May2021 10:00:27.183] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2393ms or 47 ticks behind
+[04May2021 10:08:02.481] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Unknown or incomplete command, see below for error
+[04May2021 10:08:02.501] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ddsdflksdjflkjlkjjssssssssssssssddddddddddddk<--[HERE]
+[04May2021 10:12:14.436] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> u can give me survival now
+[04May2021 10:14:50.979] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] so it didnt go down
+[04May2021 10:14:52.431] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] good
+[04May2021 10:15:10.589] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Set ovwe's game mode to Survival Mode
+[04May2021 10:15:16.629] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> thx
+[04May2021 10:24:23.685] [Netty Epoll Server IO #2/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.ModIdArgument@34c6ff6 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[04May2021 10:24:23.685] [Netty Epoll Server IO #2/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.EnumArgument@b88bf8d (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[04May2021 10:25:48.816] [Netty Epoll Server IO #2/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.ModIdArgument@34c6ff6 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[04May2021 10:25:48.819] [Netty Epoll Server IO #2/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.EnumArgument@b88bf8d (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[04May2021 10:26:10.368] [Netty Epoll Server IO #2/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.ModIdArgument@34c6ff6 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[04May2021 10:26:10.369] [Netty Epoll Server IO #2/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.EnumArgument@b88bf8d (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[04May2021 10:27:46.966] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] wyd?
+[04May2021 10:27:53.796] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> getting lvls
+[04May2021 10:27:59.316] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> idrk whatt to do
+[04May2021 10:28:19.073] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] yeah i dont know what to do on the server anymore
+[04May2021 10:28:24.382] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] thats part of the reason i havent played
+[04May2021 10:28:28.935] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> ya same
+[04May2021 10:28:46.821] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: [Server] is there anything that would make the server fun again that u can think of
+[04May2021 10:28:58.730] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> idk
+[04May2021 10:29:00.814] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> not rly
+[04May2021 10:32:00.407] [Netty Epoll Server IO #2/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.ModIdArgument@34c6ff6 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[04May2021 10:32:00.409] [Netty Epoll Server IO #2/ERROR] [net.minecraft.command.arguments.ArgumentTypes/]: Could not serialize net.minecraftforge.server.command.EnumArgument@b88bf8d (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[04May2021 10:32:13.275] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: <ovwe> im gonna go
+[04May2021 10:32:14.477] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: ovwe lost connection: Disconnected
+[04May2021 10:32:14.477] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: ovwe left the game
+[04May2021 12:45:23.345] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[04May2021 12:45:23.336] [Server console handler/ERROR] [net.minecraft.server.dedicated.DedicatedServer/]: Caught previously unhandled exception :
+java.io.IOError: java.io.IOException: Error executing 'stty -a': stty: 'standard input': Input/output error
+	at org.jline.terminal.impl.AbstractPosixTerminal.setAttributes(AbstractPosixTerminal.java:54) ~[jline-3.12.1.jar:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:650) ~[jline-3.12.1.jar:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:418) ~[jline-3.12.1.jar:?]
+	at net.minecraftforge.server.console.TerminalHandler.handleCommands(TerminalHandler.java:60) ~[?:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:79) ~[?:?]
+Caused by: java.io.IOException: Error executing 'stty -a': stty: 'standard input': Input/output error
+	at org.jline.utils.ExecHelper.exec(ExecHelper.java:42) ~[jline-3.12.1.jar:?]
+	at org.jline.terminal.impl.ExecPty.doGetConfig(ExecPty.java:175) ~[jline-3.12.1.jar:?]
+	at org.jline.terminal.impl.ExecPty.getAttr(ExecPty.java:87) ~[jline-3.12.1.jar:?]
+	at org.jline.terminal.impl.ExecPty.doSetAttr(ExecPty.java:93) ~[jline-3.12.1.jar:?]
+	at org.jline.terminal.impl.AbstractPty.setAttr(AbstractPty.java:29) ~[jline-3.12.1.jar:?]
+	at org.jline.terminal.impl.AbstractPosixTerminal.setAttributes(AbstractPosixTerminal.java:52) ~[jline-3.12.1.jar:?]
+	... 4 more
+[04May2021 12:45:23.348] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[04May2021 12:45:23.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[04May2021 12:45:23.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[04May2021 12:45:23.351] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: java.io.IOError: java.io.IOException: Error executing 'stty -a': stty: 'standard input': Input/output error
+[04May2021 12:45:23.358] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: 	at org.jline.terminal.impl.AbstractPosixTerminal.getAttributes(AbstractPosixTerminal.java:46)
+[04May2021 12:45:23.360] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: 	at org.jline.terminal.impl.AbstractTerminal.enterRawMode(AbstractTerminal.java:117)
+[04May2021 12:45:23.360] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: 	at org.jline.reader.impl.LineReaderImpl.handleSignal(LineReaderImpl.java:1043)
+[04May2021 12:45:23.361] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: 	at org.jline.terminal.impl.AbstractTerminal.raise(AbstractTerminal.java:81)
+[04May2021 12:45:23.361] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: 	at org.jline.terminal.impl.PosixSysTerminal.lambda$handle$1(PosixSysTerminal.java:65)
+[04May2021 12:45:23.361] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: 	at org.jline.utils.Signals.lambda$register$1(Signals.java:52)
+[04May2021 12:45:23.368] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: 	at com.sun.proxy.$Proxy20.handle(Unknown Source)
+[04May2021 12:45:23.369] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: 	at jdk.unsupported/sun.misc.Signal$InternalMiscHandler.handle(Signal.java:198)
+[04May2021 12:45:23.371] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: 	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:220)
+[04May2021 12:45:23.374] [SIGCONT handler/INFO] [STDERR/]: [java.lang.Thread:dispatchUncaughtException:1997]: 	at java.base/java.lang.Thread.run(Thread.java:829)
+[04May2021 12:45:23.375] [SIGCONT handler/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1059]: Caused by: java.io.IOException: Error executing 'stty -a': stty: 'standard input': Input/output error
+[04May2021 12:45:23.377] [SIGCONT handler/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1059]: 	at org.jline.utils.ExecHelper.exec(ExecHelper.java:42)
+[04May2021 12:45:23.378] [SIGCONT handler/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1059]: 	at org.jline.terminal.impl.ExecPty.doGetConfig(ExecPty.java:175)
+[04May2021 12:45:23.379] [SIGCONT handler/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1059]: 	at org.jline.terminal.impl.ExecPty.getAttr(ExecPty.java:87)
+[04May2021 12:45:23.380] [SIGCONT handler/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1059]: 	at org.jline.terminal.impl.AbstractPosixTerminal.getAttributes(AbstractPosixTerminal.java:44)
+[04May2021 12:45:23.384] [SIGCONT handler/INFO] [STDERR/]: [java.lang.ThreadGroup:uncaughtException:1059]: 	... 9 more
+[04May2021 12:45:23.619] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[04May2021 12:45:23.621] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[04May2021 12:45:23.636] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04May2021 12:45:23.637] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[04May2021 12:45:23.645] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[04May2021 12:45:23.682] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[04May2021 12:45:23.724] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04May2021 12:45:23.748] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved

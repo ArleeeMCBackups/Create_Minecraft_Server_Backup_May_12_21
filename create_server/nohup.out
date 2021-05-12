@@ -1,0 +1,775 @@
+2021-03-30 19:07:31,868 main WARN Advanced terminal features are not available in this environment
+[32m[19:07:32] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmlserver, --fml.forgeVersion, 34.1.0, --fml.mcpVersion, 20200911.084530, --fml.mcVersion, 1.16.3, --fml.forgeGroup, net.minecraftforge]
+[m[32m[19:07:32] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 7.0.1+78+master.e9771d8 starting: java version 11.0.10 by Ubuntu
+[m[32m[19:07:32] [main/INFO] [ne.mi.fm.lo.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[m[32m[19:07:32] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.1 Source=file:/home/ethan/create_server/create_server/libraries/org/spongepowered/mixin/0.8.1/mixin-0.8.1.jar Service=ModLauncher Env=SERVER
+[m[32m[19:07:34] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[m[32m[19:07:36] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlserver' with arguments [--gameDir, .]
+[m[32m[19:07:51] [modloading-worker-0/INFO] [ne.mi.co.ForgeMod/FORGEMOD]: Forge mod loading, version 34.1.0, for MC 1.16.3 with MCP 20200911.084530
+[m[32m[19:07:51] [modloading-worker-0/INFO] [ne.mi.co.MinecraftForge/FORGE]: MinecraftForge v34.1.0 Initialized
+[m[32m[19:07:52] [modloading-worker-1/INFO] [JarSignVerifier/]: Mod usefulbackpacks is signed with a valid certificate.
+[m[32m[19:07:52] [modloading-worker-0/INFO] [JarSignVerifier/]: Mod uteamcore is signed with a valid certificate.
+[m[32m[19:07:52] [modloading-worker-1/INFO] [co.si.cr.re.re.AbstractRegistrate/]: Detected new forge version, registering events reflectively.
+[m[1;31m[19:08:01] [main/ERROR] [minecraft/Util]: No data fixer registered for super_glue
+[m[1;31m[19:08:01] [main/ERROR] [minecraft/Util]: No data fixer registered for contraption
+[m[1;31m[19:08:01] [main/ERROR] [minecraft/Util]: No data fixer registered for stationary_contraption
+[m[1;31m[19:08:01] [main/ERROR] [minecraft/Util]: No data fixer registered for seat
+[m[32m[19:08:02] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [usefulbackpacks] Starting version check at https://api.u-team.info/update/usefulbackpacks.json
+[mWARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by net.minecraftforge.fml.common.ObfuscationReflectionHelper to method java.util.BitSet.trimToSize()
+WARNING: Please consider reporting this to the maintainers of net.minecraftforge.fml.common.ObfuscationReflectionHelper
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[32m[19:08:03] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [usefulbackpacks] Found status: OUTDATED Current: 1.11.5.82 Target: 1.11.6.84
+[m[32m[19:08:03] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[m[32m[19:08:03] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 34.1.0 Target: null
+[m[32m[19:08:03] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [uteamcore] Starting version check at https://api.u-team.info/update/uteamcore.json
+[m[32m[19:08:03] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [uteamcore] Found status: OUTDATED Current: 3.1.9.181 Target: 3.1.12.185
+[m[32m[19:08:12] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[m[1;31m[19:08:12] [main/FATAL] [minecraft/Main]: Failed to start the minecraft server
+net.minecraft.server.SessionLockManager$AlreadyLockedException: /home/ethan/create_server/create_server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.server.SessionLockManager$AlreadyLockedException.func_233000_a_(SourceFile:98) ~[?:?] {re:classloading}
+	at net.minecraft.server.SessionLockManager.func_232998_a_(SourceFile:44) ~[?:?] {re:classloading}
+	at net.minecraft.world.storage.SaveFormat$LevelSave.<init>(SaveFormat.java:277) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.world.storage.SaveFormat.func_237274_c_(SaveFormat.java:265) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.Main.main(Main.java:117) ~[?:?] {re:classloading}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?] {}
+	at net.minecraftforge.fml.loading.FMLServerLaunchProvider.lambda$launchService$0(FMLServerLaunchProvider.java:51) ~[forge-1.16.3-34.1.0.jar:34.1] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-7.0.1.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-7.0.1.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.runLauncher(ServerMain.java:63) [forge-1.16.3-34.1.0.jar:?] {}
+	at net.minecraftforge.server.ServerMain$Runner.access$100(ServerMain.java:60) [forge-1.16.3-34.1.0.jar:?] {}
+	at net.minecraftforge.server.ServerMain.main(ServerMain.java:57) [forge-1.16.3-34.1.0.jar:?] {}
+[m2021-03-30 19:10:09,919 main WARN Advanced terminal features are not available in this environment
+[32m[19:10:10] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmlserver, --fml.forgeVersion, 34.1.0, --fml.mcpVersion, 20200911.084530, --fml.mcVersion, 1.16.3, --fml.forgeGroup, net.minecraftforge]
+[m[32m[19:10:10] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 7.0.1+78+master.e9771d8 starting: java version 11.0.10 by Ubuntu
+[m[32m[19:10:10] [main/INFO] [ne.mi.fm.lo.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[m[32m[19:10:11] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.1 Source=file:/home/ethan/create_server/create_server/libraries/org/spongepowered/mixin/0.8.1/mixin-0.8.1.jar Service=ModLauncher Env=SERVER
+[m[32m[19:10:12] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[m[32m[19:10:14] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlserver' with arguments [--gameDir, .]
+[m[32m[19:10:49] [modloading-worker-0/INFO] [ne.mi.co.ForgeMod/FORGEMOD]: Forge mod loading, version 34.1.0, for MC 1.16.3 with MCP 20200911.084530
+[m[32m[19:10:49] [modloading-worker-0/INFO] [ne.mi.co.MinecraftForge/FORGE]: MinecraftForge v34.1.0 Initialized
+[m[32m[19:10:49] [modloading-worker-1/INFO] [JarSignVerifier/]: Mod usefulbackpacks is signed with a valid certificate.
+[m[32m[19:10:52] [modloading-worker-1/INFO] [JarSignVerifier/]: Mod uteamcore is signed with a valid certificate.
+[m[32m[19:10:52] [modloading-worker-0/INFO] [co.si.cr.re.re.AbstractRegistrate/]: Detected new forge version, registering events reflectively.
+[m[1;31m[19:11:19] [main/ERROR] [minecraft/Util]: No data fixer registered for super_glue
+[m[1;31m[19:11:19] [main/ERROR] [minecraft/Util]: No data fixer registered for contraption
+[m[1;31m[19:11:19] [main/ERROR] [minecraft/Util]: No data fixer registered for stationary_contraption
+[m[1;31m[19:11:19] [main/ERROR] [minecraft/Util]: No data fixer registered for seat
+[m[32m[19:11:20] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [usefulbackpacks] Starting version check at https://api.u-team.info/update/usefulbackpacks.json
+[mWARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by net.minecraftforge.fml.common.ObfuscationReflectionHelper to method java.util.BitSet.trimToSize()
+WARNING: Please consider reporting this to the maintainers of net.minecraftforge.fml.common.ObfuscationReflectionHelper
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[32m[19:11:21] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [usefulbackpacks] Found status: OUTDATED Current: 1.11.5.82 Target: 1.11.6.84
+[m[32m[19:11:21] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[m[32m[19:11:21] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 34.1.0 Target: null
+[m[32m[19:11:21] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [uteamcore] Starting version check at https://api.u-team.info/update/uteamcore.json
+[m[32m[19:11:21] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [uteamcore] Found status: OUTDATED Current: 3.1.9.181 Target: 3.1.12.185
+[m[32m[19:11:31] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[m[33m[19:11:33] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[m[33m[19:11:33] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[m[33m[19:11:33] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[m[33m[19:11:33] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[m[33m[19:11:33] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[m[32m[19:11:33] [main/INFO] [minecraft/SimpleReloadableResourceManager]: Reloading ResourceManager: Default, forge-1.16.3-34.1.0-universal.jar, create-mc1.16.3_v0.3e.jar, Useful-Backpacks-Mod-1.16.3.jar, U-Team-Core-1.16.3.jar
+[m[32m[19:11:39] [Worker-Main-2/INFO] [minecraft/RecipeManager]: Loaded 18 recipes
+[m[32m[19:11:42] [Worker-Main-2/INFO] [minecraft/AdvancementList]: Loaded 1650 advancements
+[m[32m[19:11:50] [Server thread/INFO] [minecraft/DedicatedServer]: Starting minecraft server version 1.16.3
+[m[32m[19:11:50] [Server thread/INFO] [minecraft/DedicatedServer]: Loading properties
+[m[32m[19:11:50] [Server thread/INFO] [minecraft/DedicatedServer]: Default game type: SURVIVAL
+[m[32m[19:11:50] [Server thread/INFO] [minecraft/DedicatedServer]: Generating keypair
+[m[1;31m[19:11:51] [Server console handler/ERROR] [minecraft/DedicatedServer]: Exception handling console input
+java.io.IOException: Bad file descriptor
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:?] {}
+	at java.io.FileInputStream.read(FileInputStream.java:279) ~[?:?] {}
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:290) ~[?:?] {}
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:351) ~[?:?] {}
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284) ~[?:?] {}
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326) ~[?:?] {}
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178) ~[?:?] {}
+	at java.io.InputStreamReader.read(InputStreamReader.java:181) ~[?:?] {}
+	at java.io.BufferedReader.fill(BufferedReader.java:161) ~[?:?] {}
+	at java.io.BufferedReader.readLine(BufferedReader.java:326) ~[?:?] {}
+	at java.io.BufferedReader.readLine(BufferedReader.java:392) ~[?:?] {}
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:84) [?:?] {re:classloading}
+[m[32m[19:11:51] [Server thread/INFO] [minecraft/DedicatedServer]: Starting Minecraft server on *:25565
+[m[32m[19:11:51] [Server thread/INFO] [minecraft/NetworkSystem]: Using epoll channel type
+[m[32m[19:11:51] [Server thread/INFO] [minecraft/DedicatedServer]: Preparing level "world"
+[m[32m[19:11:52] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[m[32m[19:11:56] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 0%
+[m[32m[19:11:56] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 0%
+[m[32m[19:11:56] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 0%
+[m[32m[19:11:56] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 0%
+[m[32m[19:11:56] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 0%
+[m[32m[19:11:56] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 0%
+[m[32m[19:11:56] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 0%
+[m[32m[19:11:56] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 0%
+[m[32m[19:11:56] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 0%
+[m[32m[19:11:57] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 0%
+[m[32m[19:11:57] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Preparing spawn area: 49%
+[m[32m[19:11:58] [Server thread/INFO] [minecraft/LoggingChunkStatusListener]: Time elapsed: 5747 ms
+[m[32m[19:11:58] [Server thread/INFO] [minecraft/DedicatedServer]: Done (6.406s)! For help, type "help"
+[m[32m[19:12:10] [User Authenticator #1/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[19:12:12] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@58f38e7a
+[m[32m[19:12:12] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:60319] logged in with entity id 59 at (480.2247722387942, 68.0, -83.57360464858697)
+[m[32m[19:12:13] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[19:12:13] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:12:13] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[19:12:15] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2021ms or 40 ticks behind
+[m[32m[19:12:28] [User Authenticator #2/INFO] [minecraft/ServerLoginNetHandler]: UUID of player arleee is 006e1dac-3ddb-45a2-a126-ba673de46cb5
+[m[32m[19:12:35] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@5aef60a4
+[m[32m[19:12:35] [Server thread/INFO] [minecraft/PlayerList]: arleee[/192.168.1.1:50940] logged in with entity id 493 at (833.5530608154093, 25.0, -429.46032858190677)
+[m[32m[19:12:35] [Server thread/INFO] [minecraft/DedicatedServer]: arleee joined the game
+[m[1;31m[19:12:35] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:12:35] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[19:12:43] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> helloooooooooooooooo
+[m[32m[19:12:47] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> hello samantha mers
+[m[32m[19:12:53] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> come to my place of work
+[m[32m[19:12:57] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> its not rly decorated yet
+[m[32m[19:13:01] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> but i have too much work to do
+[m[32m[19:13:07] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> and where would that be
+[m[32m[19:13:12] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> behind the peace house
+[m[32m[19:13:16] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> coming
+[m[32m[19:13:21] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> eeee
+[m[33m[19:13:22] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 52056ms or 1041 ticks behind
+[m[32m[19:13:24] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> eee
+[m[33m[19:14:12] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 34550ms or 691 ticks behind
+[m[32m[19:14:13] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> are u here yet
+[m[32m[19:14:29] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> one sec
+[m[32m[19:14:33] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> jhbasgsdjaksldjs
+[m[33m[19:14:50] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 22985ms or 459 ticks behind
+[m[32m[19:14:52] [User Authenticator #3/INFO] [minecraft/ServerLoginNetHandler]: UUID of player Crypto64 is 64e2e741-341e-4652-a3bf-c432f16707ac
+[m[32m[19:14:57] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@39c4bbc9
+[m[32m[19:14:58] [Server thread/INFO] [minecraft/PlayerList]: Crypto64[/73.224.234.112:50139] logged in with entity id 5722 at (34.69999998807907, 90.0, 100.32031844228709)
+[m[32m[19:14:58] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 joined the game
+[m[1;31m[19:14:58] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:14:58] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[1;31m[19:14:58] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:14:58] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[19:14:58] [Server thread/INFO] [minecraft/DedicatedServer]: [arleee: Teleported Crypto64 to arleee]
+[m[32m[19:15:00] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> HIII
+[m[32m[19:15:04] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> COME TO MY PLACE OF WORK
+[m[32m[19:15:07] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> hello cryptino sixty four
+[m[32m[19:15:18] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> COME LOOK
+[m[32m[19:15:24] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> 1 sec bruv
+[m[33m[19:15:32] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 26683ms or 533 ticks behind
+[m[32m[19:15:33] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: Crypto64 lost connection: Timed out
+[m[32m[19:15:33] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 left the game
+[m[32m[19:15:36] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> oh
+[m[32m[19:15:39] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> L
+[m[32m[19:15:42] [User Authenticator #4/INFO] [minecraft/ServerLoginNetHandler]: UUID of player Crypto64 is 64e2e741-341e-4652-a3bf-c432f16707ac
+[m[32m[19:15:45] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@49477b53
+[m[32m[19:15:45] [Server thread/INFO] [minecraft/PlayerList]: Crypto64[/73.224.234.112:50141] logged in with entity id 7564 at (787.1575221776848, 67.0, -357.75897848036817)
+[m[32m[19:15:45] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 joined the game
+[m[1;31m[19:15:45] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:15:45] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[19:15:48] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> YAYYYY
+[m[32m[19:15:50] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> welcome back64
+[m[32m[19:15:57] [Server thread/INFO] [minecraft/DedicatedServer]: <Crypto64> lmfao
+[m[33m[19:16:00] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 12951ms or 259 ticks behind
+[m[32m[19:16:03] [Server thread/INFO] [minecraft/DedicatedServer]: <Crypto64> the lag
+[m[32m[19:16:05] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> kris come see the agency
+[m[32m[19:16:06] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> L
+[m[33m[19:16:24] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9330ms or 186 ticks behind
+[m[32m[19:16:33] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: Crypto64 lost connection: Disconnected
+[m[32m[19:16:33] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 left the game
+[m[32m[19:16:39] [Server thread/INFO] [minecraft/DedicatedServer]: <arleee> gtg
+[m[32m[19:16:40] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: arleee lost connection: Disconnected
+[m[32m[19:16:40] [Server thread/INFO] [minecraft/DedicatedServer]: arleee left the game
+[m[32m[19:16:41] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> oh
+[m[33m[19:16:42] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3603ms or 72 ticks behind
+[m[32m[19:16:49] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> oh
+[m[32m[19:17:06] [User Authenticator #5/INFO] [minecraft/ServerLoginNetHandler]: UUID of player Crypto64 is 64e2e741-341e-4652-a3bf-c432f16707ac
+[m[33m[19:17:06] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2165ms or 43 ticks behind
+[m[32m[19:17:08] [Server thread/INFO] [minecraft/ServerLoginNetHandler]: Disconnecting com.mojang.authlib.GameProfile@496f2788[id=64e2e741-341e-4652-a3bf-c432f16707ac,name=Crypto64,properties={textures=[com.mojang.authlib.properties.Property@329842f7]},legacy=false] (/73.224.234.112:50143): Took too long to log in
+[m[32m[19:17:08] [Server thread/INFO] [minecraft/ServerLoginNetHandler]: com.mojang.authlib.GameProfile@496f2788[id=64e2e741-341e-4652-a3bf-c432f16707ac,name=Crypto64,properties={textures=[com.mojang.authlib.properties.Property@329842f7]},legacy=false] (/73.224.234.112:50143) lost connection: Took too long to log in
+[m[32m[19:17:16] [User Authenticator #6/INFO] [minecraft/ServerLoginNetHandler]: UUID of player Crypto64 is 64e2e741-341e-4652-a3bf-c432f16707ac
+[m[32m[19:17:18] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@7aa63bcf
+[m[32m[19:17:18] [Server thread/INFO] [minecraft/PlayerList]: Crypto64[/73.224.234.112:50151] logged in with entity id 10801 at (788.5474425245918, 68.16610926093821, -355.28358266295754)
+[m[32m[19:17:18] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 joined the game
+[m[1;31m[19:17:18] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:17:18] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[19:17:20] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> YAYYY
+[m[33m[19:17:24] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2311ms or 46 ticks behind
+[m[33m[19:17:46] [Server thread/WARN] [minecraft/ServerPlayNetHandler]: Crypto64 moved too quickly! -0.6259202250461158,0.41999998688697815,10.173184540542934
+[m[33m[19:17:47] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 8648ms or 172 ticks behind
+[m[33m[19:18:08] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5499ms or 109 ticks behind
+[m[33m[19:18:28] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5659ms or 113 ticks behind
+[m[32m[19:18:34] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: Crypto64 lost connection: Disconnected
+[m[32m[19:18:34] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 left the game
+[m[32m[19:18:41] [User Authenticator #7/INFO] [minecraft/ServerLoginNetHandler]: UUID of player Crypto64 is 64e2e741-341e-4652-a3bf-c432f16707ac
+[m[32m[19:18:43] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@14ded3c
+[m[32m[19:18:43] [Server thread/INFO] [minecraft/PlayerList]: Crypto64[/73.224.234.112:50160] logged in with entity id 16026 at (787.9868411637475, 68.0, -345.71044818484387)
+[m[32m[19:18:43] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 joined the game
+[m[1;31m[19:18:43] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:18:43] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[19:18:48] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4771ms or 95 ticks behind
+[m[33m[19:19:09] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6196ms or 123 ticks behind
+[m[32m[19:19:28] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: Crypto64 lost connection: Timed out
+[m[32m[19:19:28] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 left the game
+[m[33m[19:19:29] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4863ms or 97 ticks behind
+[m[32m[19:19:35] [User Authenticator #8/INFO] [minecraft/ServerLoginNetHandler]: UUID of player Crypto64 is 64e2e741-341e-4652-a3bf-c432f16707ac
+[m[32m[19:19:37] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@3ca7c9e8
+[m[32m[19:19:37] [Server thread/INFO] [minecraft/PlayerList]: Crypto64[/73.224.234.112:50167] logged in with entity id 19381 at (764.706551958932, 64.0, -291.65032404631154)
+[m[32m[19:19:37] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 joined the game
+[m[1;31m[19:19:37] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:19:37] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[19:19:49] [Server thread/WARN] [minecraft/ServerPlayNetHandler]: Crypto64 moved too quickly! -2.099868414648313,1.1112159139061646,9.959280722468804
+[m[33m[19:20:01] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2021ms or 40 ticks behind
+[m[33m[19:20:20] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4042ms or 80 ticks behind
+[m[32m[19:20:22] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: Crypto64 lost connection: Timed out
+[m[32m[19:20:22] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 left the game
+[m[32m[19:20:27] [User Authenticator #9/INFO] [minecraft/ServerLoginNetHandler]: UUID of player Crypto64 is 64e2e741-341e-4652-a3bf-c432f16707ac
+[m[32m[19:20:31] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@74ca6972
+[m[32m[19:20:31] [Server thread/INFO] [minecraft/PlayerList]: Crypto64[/73.224.234.112:50169] logged in with entity id 19723 at (743.3308012058676, 63.0, -252.47914499333547)
+[m[32m[19:20:31] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 joined the game
+[m[1;31m[19:20:31] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:20:31] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[19:20:41] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5180ms or 103 ticks behind
+[m[32m[19:21:07] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: Crypto64 lost connection: Timed out
+[m[32m[19:21:07] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 left the game
+[m[33m[19:21:08] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2062ms or 41 ticks behind
+[m[32m[19:23:27] [Server thread/INFO] [minecraft/ServerLoginNetHandler]: Disconnecting com.mojang.authlib.GameProfile@32387f6c[id=<null>,name=Crypto64,properties={},legacy=false] (/73.224.234.112:50181): Took too long to log in
+[m[32m[19:23:27] [Server thread/INFO] [minecraft/ServerLoginNetHandler]: com.mojang.authlib.GameProfile@32387f6c[id=<null>,name=Crypto64,properties={},legacy=false] (/73.224.234.112:50181) lost connection: Took too long to log in
+[m[32m[19:23:32] [User Authenticator #10/INFO] [minecraft/ServerLoginNetHandler]: UUID of player Crypto64 is 64e2e741-341e-4652-a3bf-c432f16707ac
+[m[32m[19:23:34] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@b37246c
+[m[32m[19:23:34] [Server thread/INFO] [minecraft/PlayerList]: Crypto64[/73.224.234.112:50183] logged in with entity id 20213 at (743.7949700589787, 64.17675927506424, -244.65420637895056)
+[m[32m[19:23:34] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 joined the game
+[m[1;31m[19:23:34] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:23:34] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[19:23:37] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> yayyyyyyy
+[m[32m[19:23:58] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> how far are u
+[m[33m[19:24:00] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2045ms or 40 ticks behind
+[m[33m[19:24:17] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2936ms or 58 ticks behind
+[m[32m[19:24:20] [Server thread/INFO] [minecraft/DedicatedServer]: <Crypto64> test
+[m[32m[19:24:20] [Server thread/INFO] [minecraft/DedicatedServer]: <Crypto64> test
+[m[32m[19:24:23] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> hi
+[m[32m[19:24:25] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> test
+[m[32m[19:24:30] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: Crypto64 lost connection: Timed out
+[m[32m[19:24:30] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 left the game
+[m[33m[19:24:42] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9744ms or 194 ticks behind
+[m[33m[19:25:35] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2009ms or 40 ticks behind
+[m[33m[19:25:52] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2493ms or 49 ticks behind
+[m[33m[19:26:13] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5739ms or 114 ticks behind
+[m[33m[19:27:40] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2084ms or 41 ticks behind
+[m[33m[19:27:57] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2382ms or 47 ticks behind
+[m[33m[19:28:19] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2007ms or 40 ticks behind
+[m[33m[19:28:41] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2048ms or 40 ticks behind
+[m[33m[19:29:07] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2007ms or 40 ticks behind
+[m[33m[19:29:24] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2083ms or 41 ticks behind
+[m[33m[19:30:06] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2005ms or 40 ticks behind
+[m[33m[19:30:26] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/21732, l='ServerLevel[world]', x=783.10, y=74.00, z=-56.45]
+[m[33m[19:30:41] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2030ms or 40 ticks behind
+[m[33m[19:30:59] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2916ms or 58 ticks behind
+[m[33m[19:31:16] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2320ms or 46 ticks behind
+[m[33m[19:31:34] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2547ms or 50 ticks behind
+[m[33m[19:31:50] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2001ms or 40 ticks behind
+[m[33m[19:32:13] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2038ms or 40 ticks behind
+[m[33m[19:32:31] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2449ms or 48 ticks behind
+[m[33m[19:32:54] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2006ms or 40 ticks behind
+[m[33m[19:33:15] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2016ms or 40 ticks behind
+[m[33m[19:33:41] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2003ms or 40 ticks behind
+[m[33m[19:33:59] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2171ms or 43 ticks behind
+[m[33m[19:34:16] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2301ms or 46 ticks behind
+[m[33m[19:34:34] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2688ms or 53 ticks behind
+[m[33m[19:34:51] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2178ms or 43 ticks behind
+[m[33m[19:35:08] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2404ms or 48 ticks behind
+[m[33m[19:35:26] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2540ms or 50 ticks behind
+[m[33m[19:35:47] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2009ms or 40 ticks behind
+[m[33m[19:36:06] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3624ms or 72 ticks behind
+[m[33m[19:36:41] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2025ms or 40 ticks behind
+[m[33m[19:37:00] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3918ms or 78 ticks behind
+[m[33m[19:37:18] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3448ms or 68 ticks behind
+[m[33m[19:37:35] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2059ms or 41 ticks behind
+[m[33m[19:37:53] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2844ms or 56 ticks behind
+[m[33m[19:38:11] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2359ms or 47 ticks behind
+[m[33m[19:38:30] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4492ms or 89 ticks behind
+[m[33m[19:38:47] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2438ms or 48 ticks behind
+[m[33m[19:39:04] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2100ms or 42 ticks behind
+[m[33m[19:39:34] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2009ms or 40 ticks behind
+[m[33m[19:39:53] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/22967, l='ServerLevel[world]', x=606.31, y=64.00, z=20.51]
+[m[33m[19:39:54] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4631ms or 92 ticks behind
+[m[32m[19:40:09] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss fell from a high place
+[m[1;31m[19:40:11] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:40:11] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[19:41:17] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2126ms or 42 ticks behind
+[m[33m[19:42:18] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/23936, l='ServerLevel[world]', x=606.76, y=64.00, z=19.05]
+[m[33m[19:42:28] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2005ms or 40 ticks behind
+[m[32m[19:42:33] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[19:42:33] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[19:45:06] [User Authenticator #11/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[19:45:09] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@fe1ef00
+[m[32m[19:45:09] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:60429] logged in with entity id 24098 at (650.2344487089922, 130.0625, 13.383560872270444)
+[m[32m[19:45:09] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[19:45:09] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:45:09] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[19:45:48] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2005ms or 40 ticks behind
+[m[32m[19:46:11] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss fell from a high place
+[m[1;31m[19:46:14] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:46:14] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[19:48:46] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2015ms or 40 ticks behind
+[m[33m[19:49:04] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3968ms or 79 ticks behind
+[m[33m[19:49:22] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2247ms or 44 ticks behind
+[m[33m[19:49:39] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2720ms or 54 ticks behind
+[m[33m[19:49:58] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4008ms or 80 ticks behind
+[m[33m[19:50:17] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3528ms or 70 ticks behind
+[m[32m[19:50:32] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss fell from a high place
+[m[1;31m[19:50:33] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:50:33] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[19:50:37] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5341ms or 106 ticks behind
+[m[33m[19:50:55] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/26767, l='ServerLevel[world]', x=606.72, y=64.00, z=17.83]
+[m[33m[19:51:04] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2004ms or 40 ticks behind
+[m[33m[19:51:24] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4299ms or 85 ticks behind
+[m[33m[19:51:43] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4611ms or 92 ticks behind
+[m[33m[19:52:04] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5452ms or 109 ticks behind
+[m[33m[19:52:22] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3751ms or 75 ticks behind
+[m[33m[19:52:41] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3386ms or 67 ticks behind
+[m[33m[19:53:22] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2016ms or 40 ticks behind
+[m[33m[19:53:41] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3533ms or 70 ticks behind
+[m[33m[19:53:53] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/27162, l='ServerLevel[world]', x=612.17, y=64.00, z=18.46]
+[m[33m[19:56:28] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2005ms or 40 ticks behind
+[m[33m[20:00:58] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2072ms or 41 ticks behind
+[m[33m[20:02:29] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2020ms or 40 ticks behind
+[m[33m[20:08:34] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/29163, l='ServerLevel[world]', x=612.68, y=64.00, z=20.36]
+[m[33m[20:08:35] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2136ms or 42 ticks behind
+[m[33m[20:10:34] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/29533, l='ServerLevel[world]', x=605.83, y=64.00, z=21.20]
+[m[33m[20:11:33] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2002ms or 40 ticks behind
+[m[32m[20:14:19] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[20:14:19] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[20:37:12] [User Authenticator #12/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[20:37:14] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@2dadbbf5
+[m[32m[20:37:14] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:60611] logged in with entity id 30052 at (541.4169953574125, 77.5, 30.128887776160106)
+[m[32m[20:37:14] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[20:37:14] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[20:37:14] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[20:37:31] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[20:37:31] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[21:05:48] [User Authenticator #13/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sam_is_rex is 5a783932-9a2d-42c8-a81c-b016cff17bcf
+[m[32m[21:05:50] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@86e7367
+[m[32m[21:05:50] [Server thread/INFO] [minecraft/PlayerList]: sam_is_rex[/173.79.165.215:14136] logged in with entity id 30653 at (821.1071417874928, 66.0, -369.1523268923547)
+[m[32m[21:05:51] [Server thread/INFO] [minecraft/DedicatedServer]: sam_is_rex joined the game
+[m[1;31m[21:05:51] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[21:05:51] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[21:43:45] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2087ms or 41 ticks behind
+[m[32m[21:57:29] [User Authenticator #14/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[21:57:32] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@74b9b8ce
+[m[32m[21:57:32] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:60906] logged in with entity id 252816 at (541.4169953574125, 77.5, 30.128887776160106)
+[m[32m[21:57:32] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[21:57:32] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[21:57:32] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[21:57:35] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> hihii
+[m[32m[21:57:45] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> hiii
+[m[32m[21:58:32] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> ive opened a private investigation agency btw so any mysterys u want solved bring em to me
+[m[32m[21:58:41] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> haha okay
+[m[33m[21:58:42] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2003ms or 40 ticks behind
+[m[33m[21:59:00] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3389ms or 67 ticks behind
+[m[33m[21:59:29] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2017ms or 40 ticks behind
+[m[33m[22:00:24] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2057ms or 41 ticks behind
+[m[33m[22:01:55] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2058ms or 41 ticks behind
+[m[33m[22:02:12] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2272ms or 45 ticks behind
+[m[33m[22:02:30] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2647ms or 52 ticks behind
+[m[33m[22:02:48] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3095ms or 61 ticks behind
+[m[33m[22:03:06] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2970ms or 59 ticks behind
+[m[33m[22:03:24] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3251ms or 65 ticks behind
+[m[33m[22:03:43] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3905ms or 78 ticks behind
+[m[33m[22:04:00] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2023ms or 40 ticks behind
+[m[33m[22:04:16] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/253964, l='ServerLevel[world]', x=607.62, y=64.00, z=18.13]
+[m[33m[22:04:53] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2003ms or 40 ticks behind
+[m[33m[22:05:12] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3961ms or 79 ticks behind
+[m[33m[22:05:29] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2185ms or 43 ticks behind
+[m[33m[22:05:47] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2696ms or 53 ticks behind
+[m[33m[22:06:05] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3201ms or 64 ticks behind
+[m[33m[22:06:22] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2077ms or 41 ticks behind
+[m[33m[22:06:42] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5058ms or 101 ticks behind
+[m[33m[22:07:00] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2932ms or 58 ticks behind
+[m[33m[22:07:24] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2006ms or 40 ticks behind
+[m[33m[22:07:43] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3884ms or 77 ticks behind
+[m[33m[22:08:03] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5341ms or 106 ticks behind
+[m[33m[22:08:21] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3225ms or 64 ticks behind
+[m[33m[22:08:40] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3129ms or 62 ticks behind
+[m[33m[22:08:59] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4032ms or 80 ticks behind
+[m[33m[22:09:18] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4189ms or 83 ticks behind
+[m[33m[22:09:38] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5561ms or 111 ticks behind
+[m[33m[22:09:57] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2002ms or 40 ticks behind
+[m[33m[22:10:16] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4640ms or 92 ticks behind
+[m[33m[22:10:36] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4976ms or 99 ticks behind
+[m[33m[22:10:55] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3990ms or 79 ticks behind
+[m[33m[22:11:17] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6584ms or 131 ticks behind
+[m[33m[22:11:37] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5303ms or 106 ticks behind
+[m[1;31m[22:11:45] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[22:11:45] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[22:12:02] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 10318ms or 206 ticks behind
+[m[33m[22:12:27] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9827ms or 196 ticks behind
+[m[33m[22:12:55] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 12563ms or 251 ticks behind
+[m[33m[22:13:19] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9384ms or 187 ticks behind
+[m[33m[22:13:43] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 8993ms or 179 ticks behind
+[m[33m[22:14:08] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 10048ms or 200 ticks behind
+[m[33m[22:14:32] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 8417ms or 168 ticks behind
+[m[33m[22:14:40] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=70, y=55, z=-81} BlockPos{x=70, y=54, z=-81}
+[m[33m[22:14:40] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=70, y=53, z=-81} BlockPos{x=70, y=55, z=-81}
+[m[33m[22:14:40] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=70, y=53, z=-81} BlockPos{x=70, y=55, z=-81}
+[m[32m[22:14:44] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[22:14:44] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[33m[22:14:51] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4948ms or 98 ticks behind
+[m[1;31m[22:17:04] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[22:17:04] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[22:20:34] [User Authenticator #15/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[22:20:37] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@29c81d8c
+[m[32m[22:20:37] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:61023] logged in with entity id 256874 at (70.69999998807907, 52.0, -80.30000001192093)
+[m[32m[22:20:37] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[22:20:37] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[22:20:37] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[22:20:40] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[22:20:40] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[22:21:25] [User Authenticator #16/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[22:21:27] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@689638ba
+[m[32m[22:21:27] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:61034] logged in with entity id 256943 at (70.69999998807907, 52.0, -80.30000001192093)
+[m[32m[22:21:27] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[22:21:27] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[22:21:27] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[22:21:33] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> oh wait
+[m[32m[22:21:37] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> they all dissapeared
+[m[32m[22:21:42] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> loll
+[m[32m[22:21:44] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> i
+[m[32m[22:21:50] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> i mean ty anyways lmao
+[m[1;31m[22:21:51] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[22:21:51] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[22:22:16] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2032ms or 40 ticks behind
+[m[33m[22:22:38] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6648ms or 132 ticks behind
+[m[33m[22:23:01] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 8006ms or 160 ticks behind
+[m[33m[22:23:26] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9843ms or 196 ticks behind
+[m[33m[22:23:49] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 8248ms or 164 ticks behind
+[m[32m[22:24:05] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> alr i gtg byeeee
+[m[32m[22:24:08] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> byeee
+[m[32m[22:24:09] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sam_is_rex lost connection: Disconnected
+[m[32m[22:24:09] [Server thread/INFO] [minecraft/DedicatedServer]: sam_is_rex left the game
+[m[33m[22:24:10] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5821ms or 116 ticks behind
+[m[33m[22:27:29] [Server thread/WARN] [minecraft/ServerPlayNetHandler]: sammerss moved too quickly! 10.061876075961152,1.1661092609382138,-0.05809238158157015
+[m[33m[22:27:56] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=533, y=68, z=-10} BlockPos{x=533, y=67, z=-10}
+[m[33m[22:27:56] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=533, y=68, z=-10} BlockPos{x=533, y=67, z=-10}
+[m[33m[22:27:57] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=533, y=68, z=-7} BlockPos{x=533, y=67, z=-9}
+[m[33m[22:27:57] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=533, y=68, z=-7} BlockPos{x=533, y=67, z=-9}
+[m[33m[22:27:57] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=533, y=68, z=-7} BlockPos{x=533, y=67, z=-9}
+[m[33m[22:28:41] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=533, y=65, z=-75} BlockPos{x=534, y=65, z=-75}
+[m[33m[22:28:41] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=533, y=65, z=-75} BlockPos{x=534, y=65, z=-75}
+[m[33m[22:28:51] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=537, y=70, z=-81} BlockPos{x=537, y=70, z=-80}
+[m[32m[22:35:09] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[22:35:09] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[22:37:05] [User Authenticator #17/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[22:37:07] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@783428b4
+[m[32m[22:37:07] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:61101] logged in with entity id 260246 at (794.8086568228449, 82.0, 1.2001426900447019)
+[m[32m[22:37:07] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[22:37:07] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[22:37:07] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[22:47:16] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=910, y=102, z=500} BlockPos{x=910, y=101, z=501}
+[m[33m[22:47:17] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=910, y=102, z=500} BlockPos{x=910, y=101, z=501}
+[m[32m[22:50:14] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[22:50:14] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[22:50:24] [User Authenticator #18/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[22:50:26] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@44f62147
+[m[32m[22:50:26] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:61140] logged in with entity id 262062 at (985.6263262268949, 55.0, 762.2553758985324)
+[m[32m[22:50:26] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[22:50:26] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[22:50:26] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[22:51:03] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> thab
+[m[32m[22:51:06] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> im lonley
+[m[32m[22:51:10] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> come hang out with me
+[m[33m[22:58:08] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=989, y=77, z=901} BlockPos{x=1051, y=44, z=1059}
+[m[33m[22:58:08] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=989, y=77, z=901} BlockPos{x=1051, y=44, z=1059}
+[m[33m[22:58:08] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=989, y=77, z=901} BlockPos{x=1051, y=44, z=1059}
+[m[33m[22:58:08] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=989, y=77, z=901} BlockPos{x=1051, y=44, z=1059}
+[m[33m[22:59:34] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=1028, y=53, z=1064} BlockPos{x=1025, y=51, z=1063}
+[m[33m[22:59:34] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=1028, y=53, z=1064} BlockPos{x=1025, y=51, z=1063}
+[m[33m[22:59:34] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=1028, y=53, z=1064} BlockPos{x=1025, y=51, z=1063}
+[m[32m[23:09:46] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[23:09:46] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[23:24:33] [User Authenticator #19/INFO] [minecraft/ServerLoginNetHandler]: UUID of player arleee is 006e1dac-3ddb-45a2-a126-ba673de46cb5
+[m[32m[23:24:35] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@4787d462
+[m[32m[23:24:35] [Server thread/INFO] [minecraft/PlayerList]: arleee[/192.168.1.1:54144] logged in with entity id 264552 at (743.2141993117312, 63.0, -243.47600697375276)
+[m[32m[23:24:35] [Server thread/INFO] [minecraft/DedicatedServer]: arleee joined the game
+[m[1;31m[23:24:35] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[23:24:35] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[23:26:09] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=0, y=0, z=0} BlockPos{x=712, y=66, z=-220}
+[m[33m[23:26:10] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=713, y=65, z=-219} BlockPos{x=711, y=64, z=-214}
+[m[33m[23:26:10] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=711, y=64, z=-213} BlockPos{x=713, y=64, z=-209}
+[m[33m[23:26:39] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/270930, l='ServerLevel[world]', x=777.95, y=74.00, z=-58.37]
+[m[33m[23:26:52] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=694, y=63, z=-85} BlockPos{x=693, y=63, z=-85}
+[m[33m[23:26:52] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=694, y=63, z=-85} BlockPos{x=692, y=63, z=-85}
+[m[33m[23:26:58] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=677, y=71, z=-66} BlockPos{x=677, y=71, z=-65}
+[m[33m[23:26:58] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=677, y=71, z=-66} BlockPos{x=677, y=71, z=-64}
+[m[33m[23:26:58] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=677, y=71, z=-66} BlockPos{x=677, y=72, z=-61}
+[m[33m[23:26:58] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=677, y=71, z=-66} BlockPos{x=676, y=72, z=-61}
+[m[33m[23:27:40] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=484, y=72, z=-75} BlockPos{x=484, y=71, z=-76}
+[m[33m[23:27:40] [Server thread/WARN] [minecraft/PlayerInteractionManager]: Mismatch in destroy block pos: BlockPos{x=484, y=72, z=-75} BlockPos{x=484, y=71, z=-77}
+[m[1;31m[23:27:48] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[23:27:48] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[23:28:57] [User Authenticator #20/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[23:28:59] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@a9edfbb
+[m[32m[23:28:59] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:61299] logged in with entity id 271720 at (1038.476467402783, 57.0, 1444.699999988079)
+[m[32m[23:28:59] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[23:28:59] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[23:28:59] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[23:29:02] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[23:29:02] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[23:45:36] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: arleee lost connection: Disconnected
+[m[32m[23:45:36] [Server thread/INFO] [minecraft/DedicatedServer]: arleee left the game
+[m[32m[01:02:26] [User Authenticator #21/INFO] [minecraft/ServerLoginNetHandler]: UUID of player ovwe is 83cb5f9f-9819-44f8-9074-f2a343e97e2e
+[m[32m[01:02:30] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@54f5350d
+[m[32m[01:02:30] [Server thread/INFO] [minecraft/PlayerList]: ovwe[/73.171.84.117:59110] logged in with entity id 273103 at (734.3000000119209, 63.5625, 180.30000001192093)
+[m[32m[01:02:30] [Server thread/INFO] [minecraft/DedicatedServer]: ovwe joined the game
+[m[1;31m[01:02:30] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[01:02:30] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[01:03:30] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: ovwe lost connection: Disconnected
+[m[32m[01:03:30] [Server thread/INFO] [minecraft/DedicatedServer]: ovwe left the game
+[m[32m[10:14:02] [User Authenticator #22/INFO] [minecraft/ServerLoginNetHandler]: UUID of player Crypto64 is 64e2e741-341e-4652-a3bf-c432f16707ac
+[m[32m[10:14:05] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@6db2491
+[m[32m[10:14:05] [Server thread/INFO] [minecraft/PlayerList]: Crypto64[/73.224.234.112:50618] logged in with entity id 274161 at (743.7949700589787, 63.0, -244.65420637895056)
+[m[32m[10:14:05] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 joined the game
+[m[1;31m[10:14:05] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[10:14:05] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[10:14:19] [Server thread/WARN] [minecraft/ServerPlayNetHandler]: Crypto64 moved too quickly! -8.145679384481127,2.506135102106221,5.676959676067867
+[m[32m[10:14:54] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: Crypto64 lost connection: Disconnected
+[m[32m[10:14:54] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 left the game
+[m[32m[10:15:10] [User Authenticator #23/INFO] [minecraft/ServerLoginNetHandler]: UUID of player Crypto64 is 64e2e741-341e-4652-a3bf-c432f16707ac
+[m[32m[10:15:12] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@51a4eff2
+[m[32m[10:15:12] [Server thread/INFO] [minecraft/PlayerList]: Crypto64[/73.224.234.112:50645] logged in with entity id 275302 at (724.5341070852002, 65.7531999805212, -212.87025906800048)
+[m[32m[10:15:12] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 joined the game
+[m[1;31m[10:15:12] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[10:15:12] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[10:15:30] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: Crypto64 lost connection: Disconnected
+[m[32m[10:15:30] [Server thread/INFO] [minecraft/DedicatedServer]: Crypto64 left the game
+[m[32m[13:05:17] [User Authenticator #24/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[13:05:21] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@17b767b6
+[m[32m[13:05:21] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:60098] logged in with entity id 275996 at (1038.699999988079, 57.0, 1444.699999988079)
+[m[32m[13:05:21] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[13:05:21] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:05:21] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[13:05:25] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss was slain by Piglin Brute
+[m[1;31m[13:05:35] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:05:35] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[1;31m[13:07:32] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:07:32] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[13:22:48] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss burned to death
+[m[1;31m[13:22:50] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:22:50] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[1;31m[13:26:14] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:26:14] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[13:33:23] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss fell from a high place
+[m[1;31m[13:33:25] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:33:25] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[13:33:28] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> fuck
+[m[32m[13:35:25] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss was shot by Skeleton
+[m[1;31m[13:35:29] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:35:29] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[13:40:30] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/285024, l='ServerLevel[world]', x=607.75, y=64.00, z=19.33]
+[m[1;31m[13:41:04] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:41:04] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[13:42:29] [Server thread/WARN] [minecraft/ServerPlayNetHandler]: sammerss moved too quickly! 9.11708629988857,1.7531999805212024,-4.117990766256818
+[m[32m[13:43:55] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[13:43:55] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[13:44:01] [User Authenticator #25/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[13:44:03] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@3dd68bb2
+[m[32m[13:44:03] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:60263] logged in with entity id 286104 at (667.8943883361407, 26.203452662563972, 97.68822281189763)
+[m[32m[13:44:03] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[13:44:03] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:44:03] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[13:44:09] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss tried to swim in lava
+[m[1;31m[13:44:10] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:44:10] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[1;31m[13:48:13] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:48:13] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[13:58:03] [User Authenticator #26/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[13:58:05] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Timed out
+[m[32m[13:58:05] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[13:58:06] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@731305b5
+[m[32m[13:58:06] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:60319] logged in with entity id 289695 at (847.7246218102398, 66.02442408821369, 847.4934302619054)
+[m[32m[13:58:06] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[13:58:06] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[13:58:06] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[14:09:14] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss was burnt to a crisp whilst fighting Ghast
+[m[1;31m[14:09:21] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[14:09:21] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[14:09:54] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[14:09:54] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[16:34:32] [User Authenticator #27/INFO] [minecraft/ServerLoginNetHandler]: UUID of player ovwe is 83cb5f9f-9819-44f8-9074-f2a343e97e2e
+[m[32m[16:34:37] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@1a2ab044
+[m[32m[16:34:37] [Server thread/INFO] [minecraft/PlayerList]: ovwe[/73.171.84.117:59955] logged in with entity id 291960 at (674.5240524062517, 64.0, 137.29661409290472)
+[m[32m[16:34:37] [Server thread/INFO] [minecraft/DedicatedServer]: ovwe joined the game
+[m[1;31m[16:34:37] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[16:34:37] [Netty Epoll Server IO #3/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[16:39:53] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: ovwe lost connection: Disconnected
+[m[32m[16:39:53] [Server thread/INFO] [minecraft/DedicatedServer]: ovwe left the game
+[m[32m[18:28:58] [User Authenticator #28/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[18:29:00] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@18a026cc
+[m[32m[18:29:00] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:61441] logged in with entity id 294009 at (541.5, 77.0, 29.5)
+[m[32m[18:29:00] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[18:29:00] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[18:29:00] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[18:31:20] [User Authenticator #29/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sam_is_rex is 5a783932-9a2d-42c8-a81c-b016cff17bcf
+[m[32m[18:31:21] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@7b066244
+[m[32m[18:31:21] [Server thread/INFO] [minecraft/PlayerList]: sam_is_rex[/173.79.165.215:31422] logged in with entity id 295040 at (618.8620767791627, 64.0, 117.88515912963094)
+[m[32m[18:31:21] [Server thread/INFO] [minecraft/DedicatedServer]: sam_is_rex joined the game
+[m[1;31m[18:31:22] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[18:31:22] [Netty Epoll Server IO #2/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[18:31:24] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> heyy
+[m[32m[18:31:26] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> holaa
+[m[1;31m[18:32:15] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[18:32:15] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[18:32:38] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2018ms or 40 ticks behind
+[m[33m[18:32:56] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3189ms or 63 ticks behind
+[m[33m[18:34:01] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2003ms or 40 ticks behind
+[m[33m[18:34:19] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2046ms or 40 ticks behind
+[m[33m[18:34:59] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2001ms or 40 ticks behind
+[m[33m[18:36:02] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2003ms or 40 ticks behind
+[m[33m[18:39:28] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2004ms or 40 ticks behind
+[m[33m[18:40:22] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2062ms or 41 ticks behind
+[m[33m[18:41:37] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2010ms or 40 ticks behind
+[m[33m[18:41:55] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3699ms or 73 ticks behind
+[m[33m[18:42:19] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2016ms or 40 ticks behind
+[m[33m[18:42:36] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2081ms or 41 ticks behind
+[m[33m[18:42:54] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2559ms or 51 ticks behind
+[m[33m[18:43:14] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4519ms or 90 ticks behind
+[m[33m[18:43:32] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3277ms or 65 ticks behind
+[m[33m[18:44:01] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2013ms or 40 ticks behind
+[m[33m[18:44:19] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2813ms or 56 ticks behind
+[m[33m[18:44:37] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3133ms or 62 ticks behind
+[m[33m[18:44:56] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3683ms or 73 ticks behind
+[m[33m[18:45:13] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2499ms or 49 ticks behind
+[m[33m[18:45:32] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4028ms or 80 ticks behind
+[m[33m[18:45:51] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3698ms or 73 ticks behind
+[m[33m[18:46:09] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3204ms or 64 ticks behind
+[m[33m[18:46:33] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9006ms or 180 ticks behind
+[m[33m[18:46:53] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5431ms or 108 ticks behind
+[m[33m[18:47:13] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4747ms or 94 ticks behind
+[m[33m[18:47:32] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4017ms or 80 ticks behind
+[m[32m[18:47:43] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss burned to death
+[m[1;31m[18:47:45] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[18:47:45] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[18:47:48] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> rip
+[m[32m[18:47:48] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> fuckkk
+[m[33m[18:47:52] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4889ms or 97 ticks behind
+[m[32m[18:48:00] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> i lost all of my netherite
+[m[32m[18:48:02] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> like all of it
+[m[32m[18:48:05] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> :o
+[m[33m[18:48:09] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2100ms or 42 ticks behind
+[m[32m[18:48:24] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> u got any ingots i can buy?
+[m[32m[18:48:32] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> ill have to check
+[m[33m[18:48:33] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2014ms or 40 ticks behind
+[m[32m[18:48:35] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> alr
+[m[33m[18:48:52] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3959ms or 79 ticks behind
+[m[33m[18:49:13] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6613ms or 132 ticks behind
+[m[33m[18:49:41] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 12495ms or 249 ticks behind
+[m[33m[18:49:52] [Server thread/WARN] [minecraft/TrackedEntity]: Fetching packet for removed entity ItemEntity['Air'/300859, l='ServerLevel[world]', x=611.98, y=64.00, z=21.25]
+[m[33m[18:50:04] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 7986ms or 159 ticks behind
+[m[33m[18:50:26] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6893ms or 137 ticks behind
+[m[33m[18:50:47] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6902ms or 138 ticks behind
+[m[33m[18:51:13] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 10201ms or 204 ticks behind
+[m[33m[18:51:35] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 7385ms or 147 ticks behind
+[m[33m[18:51:56] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6316ms or 126 ticks behind
+[m[33m[18:52:18] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6231ms or 124 ticks behind
+[m[33m[18:52:42] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9847ms or 196 ticks behind
+[m[33m[18:53:06] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 8863ms or 177 ticks behind
+[m[33m[18:53:30] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 8359ms or 167 ticks behind
+[m[33m[18:53:53] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 8714ms or 174 ticks behind
+[m[33m[18:54:19] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 10701ms or 214 ticks behind
+[m[32m[18:54:22] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> also do u happen to sell any dia gear lol
+[m[32m[18:54:29] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> yeah
+[m[32m[18:54:37] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> oo rly can i buy some
+[m[32m[18:54:40] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> yeah
+[m[33m[18:54:42] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 8046ms or 160 ticks behind
+[m[32m[18:55:03] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> yayy how much for boots a pick axe and sword
+[m[33m[18:55:03] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6441ms or 128 ticks behind
+[m[32m[18:55:16] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> uhhh i gotta think of a price
+[m[32m[18:55:20] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> alr
+[m[33m[18:55:25] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6266ms or 125 ticks behind
+[m[33m[18:55:50] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 10771ms or 215 ticks behind
+[m[33m[18:56:15] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9451ms or 189 ticks behind
+[m[32m[18:56:18] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Disconnected
+[m[32m[18:56:18] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m[32m[18:56:23] [User Authenticator #30/INFO] [minecraft/ServerLoginNetHandler]: UUID of player sammerss is e894a12e-395d-405a-a47f-ce23a8cf098f
+[m[32m[18:56:26] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@5bca3562
+[m[32m[18:56:26] [Server thread/INFO] [minecraft/PlayerList]: sammerss[/100.15.218.122:61553] logged in with entity id 301772 at (656.1374999880791, 142.0, 12.516468277179989)
+[m[32m[18:56:26] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss joined the game
+[m[1;31m[18:56:26] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[18:56:26] [Netty Epoll Server IO #1/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[33m[18:56:33] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3145ms or 62 ticks behind
+[m[33m[18:56:56] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 7960ms or 159 ticks behind
+[m[33m[18:57:21] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 10103ms or 202 ticks behind
+[m[32m[18:57:27] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> ur place looks cool
+[m[32m[18:57:32] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> tyty
+[m[33m[18:57:41] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5010ms or 100 ticks behind
+[m[33m[18:58:01] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 5165ms or 103 ticks behind
+[m[33m[18:58:25] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9153ms or 183 ticks behind
+[m[33m[18:58:50] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9467ms or 189 ticks behind
+[m[33m[18:59:12] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 7697ms or 153 ticks behind
+[m[33m[18:59:35] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 7941ms or 158 ticks behind
+[m[32m[18:59:56] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> so did u think of a price?
+[m[33m[19:00:00] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9722ms or 194 ticks behind
+[m[32m[19:00:07] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> hmmm
+[m[33m[19:00:19] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4452ms or 89 ticks behind
+[m[32m[19:00:32] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> i guess like a double full chest of sandstone
+[m[33m[19:00:37] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 3108ms or 62 ticks behind
+[m[32m[19:00:41] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> its not that hard to get dwdw
+[m[32m[19:00:43] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> ooke
+[m[33m[19:00:57] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4361ms or 87 ticks behind
+[m[32m[19:01:11] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> ill get them rn
+[m[33m[19:01:16] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4647ms or 92 ticks behind
+[m[32m[19:01:26] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> alr ill work on the sandstone
+[m[32m[19:01:28] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> tyyy
+[m[33m[19:01:42] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 10856ms or 217 ticks behind
+[m[33m[19:02:07] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 9803ms or 196 ticks behind
+[m[33m[19:02:35] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 12491ms or 249 ticks behind
+[m[33m[19:03:02] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 2292ms or 45 ticks behind
+[m[32m[19:03:05] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> wait u want dia boots, pick, and what else?
+[m[32m[19:03:11] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> axe and sword
+[m[32m[19:03:16] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> kk
+[m[33m[19:03:23] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 6147ms or 122 ticks behind
+[m[33m[19:03:43] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4797ms or 95 ticks behind
+[m[33m[19:04:02] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 4716ms or 94 ticks behind
+[m[33m[19:04:26] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 8637ms or 172 ticks behind
+[m[32m[19:04:33] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> wru
+[m[32m[19:04:39] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> at thabs getting sandstone
+[m[32m[19:04:42] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> kk
+[m[33m[19:04:52] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 11357ms or 227 ticks behind
+[m[32m[19:05:02] [User Authenticator #31/INFO] [minecraft/ServerLoginNetHandler]: UUID of player ovwe is 83cb5f9f-9819-44f8-9074-f2a343e97e2e
+[m[32m[19:05:07] [Server thread/INFO] [ne.mi.co.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@9bfe4d1
+[m[32m[19:05:07] [Server thread/INFO] [minecraft/PlayerList]: ovwe[/73.171.84.117:62224] logged in with entity id 312613 at (728.909919200817, 62.0, 232.11197261390396)
+[m[32m[19:05:07] [Server thread/INFO] [minecraft/DedicatedServer]: ovwe joined the game
+[m[1;31m[19:05:07] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.ModIdArgument@627b0cc8 (class net.minecraftforge.server.command.ModIdArgument) - will not be sent to client!
+[m[1;31m[19:05:07] [Netty Epoll Server IO #0/ERROR] [minecraft/ArgumentTypes]: Could not serialize net.minecraftforge.server.command.EnumArgument@228be66f (class net.minecraftforge.server.command.EnumArgument) - will not be sent to client!
+[m[32m[19:05:10] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> hii
+[m[32m[19:05:10] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> hiii
+[m[33m[19:05:19] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 12054ms or 241 ticks behind
+[m[32m[19:05:22] [Server thread/INFO] [minecraft/DedicatedServer]: <ovwe> hola
+[m[33m[19:05:46] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 12080ms or 241 ticks behind
+[m[33m[19:06:20] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 18917ms or 378 ticks behind
+[m[32m[19:06:54] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> wait how do u get sand from this thing i forgot
+[m[33m[19:06:57] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 21542ms or 430 ticks behind
+[m[32m[19:07:01] [Server thread/INFO] [minecraft/DedicatedServer]: <ovwe> wru
+[m[32m[19:07:06] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> thabs machines
+[m[32m[19:07:08] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> cobble then gravel
+[m[32m[19:07:19] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> i did the gravels not changing
+[m[32m[19:07:33] [Server thread/INFO] [minecraft/DedicatedServer]: <sam_is_rex> u just have to keep putting the gravel in
+[m[33m[19:07:37] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 25367ms or 507 ticks behind
+[m[32m[19:07:38] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> oke
+[m[32m[19:07:58] [Server thread/INFO] [minecraft/DedicatedServer]: <sammerss> ooo oke
+[m[33m[19:08:14] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 22293ms or 445 ticks behind
+[m[33m[19:08:47] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 17355ms or 347 ticks behind
+[m[33m[19:09:22] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 20270ms or 405 ticks behind
+[m[32m[19:09:46] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss was slain by Zombie
+[m[33m[19:09:51] [Server thread/WARN] [minecraft/MinecraftServer]: Can't keep up! Is the server overloaded? Running 14214ms or 284 ticks behind
+[m[32m[19:09:54] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: ovwe lost connection: Timed out
+[m[32m[19:09:54] [Server thread/INFO] [minecraft/DedicatedServer]: ovwe left the game
+[m[32m[19:09:57] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sam_is_rex lost connection: Timed out
+[m[32m[19:09:57] [Server thread/INFO] [minecraft/DedicatedServer]: sam_is_rex left the game
+[m[32m[19:10:03] [Server thread/INFO] [minecraft/ServerPlayNetHandler]: sammerss lost connection: Timed out
+[m[32m[19:10:03] [Server thread/INFO] [minecraft/DedicatedServer]: sammerss left the game
+[m

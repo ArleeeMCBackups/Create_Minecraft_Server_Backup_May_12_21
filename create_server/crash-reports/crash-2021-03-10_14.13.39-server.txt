@@ -1,0 +1,56 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 3/10/21, 2:13 PM
+Description: Exception in server tick loop
+
+java.lang.NullPointerException: Exception in server tick loop
+	at net.minecraft.server.management.UserList.func_152679_g(SourceFile:121) ~[?:?] {re:classloading}
+	at net.minecraft.server.dedicated.DedicatedPlayerList.func_187246_z(SourceFile:95) ~[?:?] {re:classloading}
+	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(SourceFile:22) ~[?:?] {re:classloading}
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:156) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:616) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.lambda$func_240784_a_$0(MinecraftServer.java:229) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.lang.Thread.run(Thread.java:834) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.3
+	Minecraft Version ID: 1.16.3
+	Operating System: Linux (amd64) version 5.4.0-65-generic
+	Java Version: 11.0.10, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 2336546816 bytes (2228 MB) / 3221225472 bytes (3072 MB) up to 3221225472 bytes (3072 MB)
+	CPUs: 2
+	JVM Flags: 2 total; -Xmx3g -Xms3g
+	ModLauncher: 7.0.1+78+master.e9771d8
+	ModLauncher launch target: fmlserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.1.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.3-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar runtime_enum_extender PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar capability_inject_definalize PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.1.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.3-34.1.0.jar fml TRANSFORMATIONSERVICE 
+	FML: 34.1
+	Forge: net.minecraftforge:34.1.0
+	FML Language Providers: 
+		javafml@34.1
+		minecraft@1
+	Mod List: 
+		forge-1.16.3-34.1.0-server.jar Minecraft {minecraft@1.16.3 DONE}
+		Useful-Backpacks-Mod-1.16.3.jar Useful Backpacks {usefulbackpacks@1.11.5.82 DONE}
+		forge-1.16.3-34.1.0-universal.jar Forge {forge@34.1.0 DONE}
+		U-Team-Core-1.16.3.jar U Team Core {uteamcore@3.1.9.181 DONE}
+		create-mc1.16.3_v0.3e.jar Create {create@mc1.16.3_v0.3e DONE}
+	Data Packs: vanilla, mod:forge, mod:create (incompatible), mod:usefulbackpacks, mod:uteamcore
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)

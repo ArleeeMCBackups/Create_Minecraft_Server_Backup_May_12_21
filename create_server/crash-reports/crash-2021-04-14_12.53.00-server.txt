@@ -1,0 +1,135 @@
+---- Minecraft Crash Report ----
+// This is a token for 1 free hug. Redeem at your nearest Mojangsta: [~~HUG~~]
+
+Time: 4/14/21, 12:53 PM
+Description: Exception generating new chunk
+
+java.util.ConcurrentModificationException: null
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1134) ~[?:?] {}
+	at net.minecraft.world.gen.feature.template.TemplateManager.func_200219_b(SourceFile:64) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.template.TemplateManager.func_200220_a(SourceFile:54) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.ShipwreckPieces$Piece.func_204754_a(SourceFile:105) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.ShipwreckPieces$Piece.<init>(SourceFile:85) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.ShipwreckPieces.func_204760_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.ShipwreckStructure$Start.func_230364_a_(SourceFile:35) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.ShipwreckStructure$Start.func_230364_a_(SourceFile:25) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.Structure.func_242785_a(Structure.java:224) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.StructureFeature.func_242771_a(SourceFile:35) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.ChunkGenerator.func_242705_a(SourceFile:278) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.ChunkGenerator.func_242707_a(SourceFile:267) ~[?:?] {re:classloading}
+	at net.minecraft.world.chunk.ChunkStatus.lambda$static$2(ChunkStatus.java:41) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.chunk.ChunkStatus.func_223198_a(ChunkStatus.java:198) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.server.ChunkManager.lambda$null$18(ChunkManager.java:524) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[?:?] {re:classloading}
+	at net.minecraft.world.server.ChunkManager.lambda$func_223156_b$20(ChunkManager.java:522) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1072) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?] {}
+	at net.minecraft.world.chunk.ChunkTaskPriorityQueueSorter.func_219083_b(SourceFile:58) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.func_213148_e(SourceFile:94) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.func_213145_a(SourceFile:137) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.run(SourceFile:105) ~[?:?] {re:classloading}
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.HashMap.computeIfAbsent(HashMap.java:1134) ~[?:?] {}
+	at net.minecraft.world.gen.feature.template.TemplateManager.func_200219_b(SourceFile:64) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.template.TemplateManager.func_200220_a(SourceFile:54) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.ShipwreckPieces$Piece.func_204754_a(SourceFile:105) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.ShipwreckPieces$Piece.<init>(SourceFile:85) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.ShipwreckPieces.func_204760_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.ShipwreckStructure$Start.func_230364_a_(SourceFile:35) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.ShipwreckStructure$Start.func_230364_a_(SourceFile:25) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.structure.Structure.func_242785_a(Structure.java:224) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.feature.StructureFeature.func_242771_a(SourceFile:35) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.ChunkGenerator.func_242705_a(SourceFile:278) ~[?:?] {re:classloading}
+	at net.minecraft.world.gen.ChunkGenerator.func_242707_a(SourceFile:267) ~[?:?] {re:classloading}
+	at net.minecraft.world.chunk.ChunkStatus.lambda$static$2(ChunkStatus.java:41) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.chunk.ChunkStatus.func_223198_a(ChunkStatus.java:198) ~[?:?] {re:classloading,pl:accesstransformer:B}
+-- Chunk to be generated --
+Details:
+	Location: -1559,-368
+	Position hash: -1576252999191
+	Generator: net.minecraft.world.gen.NoiseChunkGenerator@194f78ea
+Stacktrace:
+	at net.minecraft.world.server.ChunkManager.lambda$null$18(ChunkManager.java:524) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[?:?] {re:classloading}
+	at net.minecraft.world.server.ChunkManager.lambda$func_223156_b$20(ChunkManager.java:522) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1072) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?] {}
+	at net.minecraft.world.chunk.ChunkTaskPriorityQueueSorter.func_219083_b(SourceFile:58) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.func_213148_e(SourceFile:94) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.func_213145_a(SourceFile:137) ~[?:?] {re:classloading}
+	at net.minecraft.util.concurrent.DelegatedTaskExecutor.run(SourceFile:105) ~[?:?] {re:classloading}
+
+
+-- Affected level --
+Details:
+	All players: 3 total; [ServerPlayerEntity['Crypto64'/54, l='ServerLevel[world]', x=-24618.42, y=89.00, z=-6113.87], ServerPlayerEntity['sammerss'/873, l='ServerLevel[world]', x=-24281.49, y=115.88, z=-6799.92], ServerPlayerEntity['ovwe'/15152, l='ServerLevel[world]', x=737.82, y=63.00, z=171.57]]
+	Chunk stats: ServerChunkCache: 7706
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-160,72,192), Chunk: (at 0,4,0 in -10,12; contains blocks -160,0,192 to -145,255,207), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 49262506 game time, 3778033 day time
+	Level name: world
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Level weather: Rain time: 9589 (now: true), thunder time: 12424 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:849) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:283) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:782) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:637) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.lambda$func_240784_a_$0(MinecraftServer.java:229) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.lang.Thread.run(Thread.java:834) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.3
+	Minecraft Version ID: 1.16.3
+	Operating System: Linux (amd64) version 5.4.0-70-generic
+	Java Version: 11.0.10, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 1505024000 bytes (1435 MB) / 4294967296 bytes (4096 MB) up to 4294967296 bytes (4096 MB)
+	CPUs: 2
+	JVM Flags: 2 total; -Xmx4g -Xms4g
+	ModLauncher: 7.0.1+78+master.e9771d8
+	ModLauncher launch target: fmlserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.1.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.3-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar runtime_enum_extender PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar capability_inject_definalize PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.1.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.3-34.1.0.jar fml TRANSFORMATIONSERVICE 
+	FML: 34.1
+	Forge: net.minecraftforge:34.1.0
+	FML Language Providers: 
+		javafml@34.1
+		minecraft@1
+	Mod List: 
+		forge-1.16.3-34.1.0-server.jar Minecraft {minecraft@1.16.3 DONE}
+		Useful-Backpacks-Mod-1.16.3.jar Useful Backpacks {usefulbackpacks@1.11.5.82 DONE}
+		forge-1.16.3-34.1.0-universal.jar Forge {forge@34.1.0 DONE}
+		U-Team-Core-1.16.3.jar U Team Core {uteamcore@3.1.9.181 DONE}
+		create-mc1.16.3_v0.3e.jar Create {create@mc1.16.3_v0.3e DONE}
+	Player Count: 3 / 20; [ServerPlayerEntity['Crypto64'/54, l='ServerLevel[world]', x=-24618.42, y=89.00, z=-6113.87], ServerPlayerEntity['sammerss'/873, l='ServerLevel[world]', x=-24281.49, y=115.88, z=-6799.92], ServerPlayerEntity['ovwe'/15152, l='ServerLevel[world]', x=737.82, y=63.00, z=171.57]]
+	Data Packs: vanilla, mod:forge, mod:create (incompatible), mod:usefulbackpacks, mod:uteamcore
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)

@@ -1,0 +1,2 @@
+#!/bin/sh
+java -jar -Xmx4g -Xms4g forge-1.16.3-34.1.0.jar

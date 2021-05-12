@@ -1,0 +1,114 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2/10/21, 8:33 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at com.simibubi.create.content.contraptions.components.structureMovement.MovementBehaviour.dropItem(MovementBehaviour.java:36) ~[?:mc1.16.3_v0.3e] {re:classloading,pl:runtimedistcleaner:A}
+	at com.simibubi.create.content.contraptions.components.deployer.DeployerMovementBehaviour.tryDisposeOfExcess(DeployerMovementBehaviour.java:133) ~[?:mc1.16.3_v0.3e] {re:classloading}
+	at com.simibubi.create.content.contraptions.components.deployer.DeployerMovementBehaviour.visitNewPosition(DeployerMovementBehaviour.java:48) ~[?:mc1.16.3_v0.3e] {re:classloading}
+	at com.simibubi.create.content.contraptions.components.structureMovement.AbstractContraptionEntity.tickActors(AbstractContraptionEntity.java:262) ~[?:mc1.16.3_v0.3e] {re:classloading,pl:runtimedistcleaner:A}
+	at com.simibubi.create.content.contraptions.components.structureMovement.OrientedContraptionEntity.tickContraption(OrientedContraptionEntity.java:268) ~[?:mc1.16.3_v0.3e] {re:classloading}
+	at com.simibubi.create.content.contraptions.components.structureMovement.AbstractContraptionEntity.func_70071_h_(AbstractContraptionEntity.java:228) ~[?:mc1.16.3_v0.3e] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.entity.Entity.func_70098_U(Entity.java:1612) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld.func_217459_a(ServerWorld.java:633) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld.func_217479_a(ServerWorld.java:613) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.world.World.func_217390_a(World.java:554) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:399) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:846) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:283) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:782) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:637) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.lambda$func_240784_a_$0(MinecraftServer.java:229) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.lang.Thread.run(Thread.java:834) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.simibubi.create.content.contraptions.components.structureMovement.MovementBehaviour.dropItem(MovementBehaviour.java:36) ~[?:mc1.16.3_v0.3e] {re:classloading,pl:runtimedistcleaner:A}
+	at com.simibubi.create.content.contraptions.components.deployer.DeployerMovementBehaviour.tryDisposeOfExcess(DeployerMovementBehaviour.java:133) ~[?:mc1.16.3_v0.3e] {re:classloading}
+	at com.simibubi.create.content.contraptions.components.deployer.DeployerMovementBehaviour.visitNewPosition(DeployerMovementBehaviour.java:48) ~[?:mc1.16.3_v0.3e] {re:classloading}
+	at com.simibubi.create.content.contraptions.components.structureMovement.AbstractContraptionEntity.tickActors(AbstractContraptionEntity.java:262) ~[?:mc1.16.3_v0.3e] {re:classloading,pl:runtimedistcleaner:A}
+	at com.simibubi.create.content.contraptions.components.structureMovement.OrientedContraptionEntity.tickContraption(OrientedContraptionEntity.java:268) ~[?:mc1.16.3_v0.3e] {re:classloading}
+	at com.simibubi.create.content.contraptions.components.structureMovement.AbstractContraptionEntity.func_70071_h_(AbstractContraptionEntity.java:228) ~[?:mc1.16.3_v0.3e] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.entity.Entity.func_70098_U(Entity.java:1612) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld.func_217459_a(ServerWorld.java:633) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld.func_217479_a(ServerWorld.java:613) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:furnace_minecart (net.minecraft.entity.item.minecart.FurnaceMinecartEntity)
+	Entity ID: 27683
+	Entity Name: Minecart with Furnace
+	Entity's Exact location: 646.49, 69.06, 20.50
+	Entity's Block location: World: (646,69,20), Chunk: (at 6,4,4 in 40,1; contains blocks 640,0,16 to 655,255,31), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Entity's Momentum: 0.00, -0.00, 0.00
+	Entity's Passengers: [OrientedContraptionEntity['Contraption'/31909, l='ServerLevel[world]', x=646.49, y=69.06, z=20.50]]
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.func_217390_a(World.java:554) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:399) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+
+
+-- Affected level --
+Details:
+	All players: 3 total; [ServerPlayerEntity['samrex_666'/63, l='ServerLevel[world]', x=643.36, y=67.00, z=25.20], ServerPlayerEntity['arleee'/22726, l='ServerLevel[world]', x=646.21, y=67.00, z=23.66], ServerPlayerEntity['ovwe'/24065, l='ServerLevel[world]', x=570.25, y=70.24, z=-11.21]]
+	Chunk stats: ServerChunkCache: 4378
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-160,72,192), Chunk: (at 0,4,0 in -10,12; contains blocks -160,0,192 to -145,255,207), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 5463754 game time, 6854176 day time
+	Level name: world
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Level weather: Rain time: 153204 (now: false), thunder time: 153810 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:846) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:283) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:782) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:637) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.lambda$func_240784_a_$0(MinecraftServer.java:229) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.lang.Thread.run(Thread.java:834) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.3
+	Minecraft Version ID: 1.16.3
+	Operating System: Linux (amd64) version 5.4.0-65-generic
+	Java Version: 11.0.9.1, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 2691335680 bytes (2566 MB) / 3221225472 bytes (3072 MB) up to 3221225472 bytes (3072 MB)
+	CPUs: 2
+	JVM Flags: 2 total; -Xmx3g -Xms3g
+	ModLauncher: 7.0.1+78+master.e9771d8
+	ModLauncher launch target: fmlserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.1.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.3-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar runtime_enum_extender PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar capability_inject_definalize PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.3-34.1.0.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.1.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.3-34.1.0.jar fml TRANSFORMATIONSERVICE 
+	FML: 34.1
+	Forge: net.minecraftforge:34.1.0
+	FML Language Providers: 
+		javafml@34.1
+		minecraft@1
+	Mod List: 
+		forge-1.16.3-34.1.0-server.jar Minecraft {minecraft@1.16.3 DONE}
+		forge-1.16.3-34.1.0-universal.jar Forge {forge@34.1.0 DONE}
+		create-mc1.16.3_v0.3e.jar Create {create@mc1.16.3_v0.3e DONE}
+	Player Count: 3 / 20; [ServerPlayerEntity['samrex_666'/63, l='ServerLevel[world]', x=643.36, y=67.00, z=25.20], ServerPlayerEntity['arleee'/22726, l='ServerLevel[world]', x=646.21, y=67.00, z=23.66], ServerPlayerEntity['ovwe'/24065, l='ServerLevel[world]', x=570.25, y=70.24, z=-11.21]]
+	Data Packs: vanilla, mod:forge, mod:create (incompatible)
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
